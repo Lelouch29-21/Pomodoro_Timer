@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div id="timer-display" class="timer" contenteditable="true">25:00</div>
+        <div class="buttons">
+            <button id="start-button">Start</button>
+            <button id="stop-button">Stop</button>
+            <button id="reset-button">Reset</button>
+            <button id="log-button">Log Task</button>
+        </div>
+        <input type="text" id="task-input" placeholder="Enter task name...">
+        <div id="total-time">Total Time Used: 0 minutes</div>
+        <div id="daily-logs">
+            <h2>Today's Logs:</h2>
+            <ul id="log-list"></ul>
+        </div>
+        <canvas id="historyChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

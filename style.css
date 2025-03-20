@@ -1,0 +1,84 @@
+/* Pomodoro Timer Styling */
+body {
+  background-color: #1c1c1c; /* Dark theme */
+  color: #ffffff; /* Light text */
+  font-family: 'Georgia', serif; /* Inspired by Washington Post */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 3em;
+  margin: 20px auto;
+  text-align: center;
+  width: 120px; /* Fixed width for timer display */
+  border: none;
+  background-color: transparent;
+  color: #ffffff; /* White text */
+}
+
+.timer:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.buttons {
+  margin: 10px auto;
+}
+
+button {
+  background-color: #e63946; /* Blood red */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 25px; /* Rounded edges */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #a62834; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#task-input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+#total-time {
+  margin-top: 15px;
+}
+
+#daily-logs {
+  margin-top: 20px;
+}
+
+#log-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#log-list li {
+  margin-bottom: 5px;
+}
+
+canvas {
+  margin-top: 20px;
+}
